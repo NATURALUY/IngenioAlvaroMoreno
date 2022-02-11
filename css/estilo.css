@@ -1,0 +1,663 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    word-wrap:break-word;
+}
+
+/* Estilo de encabezado */
+
+header {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    bottom: 10px;
+    width: 100%; 
+    z-index: 999px;
+}
+
+.toggle,
+    [id^=drop] {
+	display: none;
+}
+
+.flex-container {
+	display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, white, green);
+}
+
+nav { 
+	margin:0;
+	padding: 0;
+}
+
+
+#logo {
+	display: block;
+	padding: 0 30px;
+	font-size: 40px;
+	line-height: 90px;
+    color: #12A537;    
+}
+
+
+nav ul {	
+	list-style: none;
+	position: relative;
+}
+
+nav ul li {	
+	display:inline-block;	
+}
+
+
+nav a {
+	display:block;
+	padding:14px 14px;	
+	color:#fff;
+	font-size: 18px;
+	text-decoration:none;
+    text-transform: uppercase;    
+}
+
+nav a:hover {	
+    color:white ; 
+    text-decoration: none;
+    border-bottom: solid white;
+}
+
+/* Fin de configuracion del encabezado */
+
+/* imagen de fondo index */
+main {
+    height: 100vh;
+    width:100%;
+    background-image: url(https://cdn.pixabay.com/photo/2020/05/30/17/18/wind-power-plant-5239642_960_720.jpg);
+    background-size: cover;
+}
+/* fin imagen de fondo index */
+
+/* Titulo de portada */
+
+main h2{
+    color: white;    
+    padding: 30px;
+    font-size: 70px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* fin de titulo de portada */
+
+/* carrusell portada */
+
+
+.containerPortada {
+    padding: 45px 0;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-evenly;
+    grid-column-gap: 5px;
+    grid-row-gap: 30px;
+    padding-bottom: 10px;
+}
+
+.tipoPortada {
+    color: white;
+    padding: 5px;    
+    text-transform: capitalize;
+    font-size: 35px;
+    background-color: rgb(201, 190, 190);
+}
+.nro{
+    color: #12A537;
+    font-size: 40px;
+}
+/* Inicio de estilos para Proyectos.html */
+
+.subtitulosProyectos{
+    padding: 50px;
+    justify-content: center;
+    text-align: center;
+    color: grey;
+    font-size: 50px;
+}
+.containerP{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+    justify-content: space-evenly;
+    grid-column-gap: 5px;
+    grid-row-gap: 30px;
+    padding-bottom: 10px;
+}
+
+/* Controlo todas uno de las cajas contenedoras */
+.proy {
+    color: gray;
+    text-align: center;
+    padding: 20px;
+    border: solid gray 0.3px;
+}
+
+.proy img{
+    pointer-events: none;
+}
+/* tecto del titulo del proyecto  */
+.proy h3 {
+    padding-bottom: 10px;
+    pointer-events: none;
+}
+/* texto del proyecto  */
+.proy p {
+    font-style: italic;
+    text-align: center;
+    padding-top: 10px;
+    pointer-events: none;
+}
+
+/* Efecto para mostrar el objeto seleccionado en un fututo link a otro html con info */
+.containerP :hover{
+    border: solid white;
+    box-shadow: gray 0 0 15px;
+   /* Fin hover */
+}
+/* Fin proyectos html */
+
+/* Inicio de estilos para Nosotros.html */
+.subtitulosNosotros {
+    padding: 50px;
+    justify-content: center;
+    text-align: center;
+    color: grey;
+    font-size: 50px;
+}
+
+/* Titulo para cada una de los items, valores, mision, etc. */
+.titulosNosotros {
+    color: grey;
+    padding: 20px;
+}
+
+.containerN{
+    display: grid;
+    grid-template-columns: 30% 20% ;
+    justify-content: center;
+    justify-content: space-evenly;
+    grid-column-gap: 5px;
+    grid-row-gap: 30px;
+    padding-bottom: 10px;
+}
+.nos {
+    align-content: center;    
+}
+
+.nosotros1 h3{
+    color: #12A537;
+    padding: 20px;
+    font-size: 40px;
+}
+.nosotros1 span{
+    color: grey;
+    font-size: 25px;
+}
+
+.nosotros4 h3{
+    color: grey;
+    font-size: 25px;
+    padding: 20px;
+}
+.nos img{
+    width: 300px;
+}
+.equipoIngenio{
+    padding: 50px;
+    text-align: left;
+    color: grey;
+    font-size: 50px; 
+}
+
+.containerStaff {
+    display: grid;
+    grid-template-columns:20% 20% 20% 20%;
+    justify-content: center;
+    justify-content: space-evenly;
+    grid-column: 5px;
+    grid-row-gap: 20px;    
+}
+
+.containerStaff image {
+    transition: 5s;
+}
+.containerStaff p {
+    color: #12A537;
+    padding: 10px;
+    padding-bottom: 40px;
+}
+
+
+/* Fin estilo para html nosotros */
+
+/* Contacto html */
+.containerContacto {
+	max-width:600px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}
+
+#contacto input[type="text"], #contacto input[type="email"], #contacto input[type="tel"], #contacto input[type="Areas"], #contacto textarea, #contacto button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contacto {
+	background:#F9F9F9;
+	padding:25px;
+	margin:50px 0;
+}
+
+#contacto h3 {
+	color: #12A537;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contacto h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contacto input[type="text"], #contacto input[type="email"], #contacto input[type="tel"], #contacto input[type="Areas"], #contacto textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contacto input[type="text"]:hover, #contacto input[type="email"]:hover, #contacto input[type="tel"]:hover, #contacto input[type="Areas"]:hover, #contacto textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contacto textarea {
+	height:100px;
+	max-width:100%;
+    resize:none;
+}
+
+#contacto button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#12A537;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contacto button[type="submit"]:hover {
+	background:#09C;	
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contacto button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contacto input:focus, #contacto textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+
+.containerUbicacion {
+    max-width:600px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}
+.mapa {    
+    padding: 30px;
+}
+
+/* Servicios html  */
+
+.subtitulosServicios {
+    padding: 50px;
+    justify-content: center;
+    text-align: center;
+    color: grey;
+    font-size: 50px;
+}
+/* Box para incluir dentro las especialidades de la empresa. */
+
+.sec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+/* Clase Cada una de las sub especialidades asi tienen el mismo formato*/
+
+.item{
+    height: 300px;
+    width: 430px;
+    justify-items: center;
+    justify-content: center;
+}
+
+.item img {
+    padding: 5px;
+}
+.item h3{
+    text-align: center;
+    color: gray;
+    padding-top: 5px;
+}
+.item p{
+    color: gray;
+    font-style: italic;
+    text-align: center;
+    padding-top: 5px;
+}
+
+/* estilo botón inferior whatsapp */
+
+.whatsapp{
+    height: 90px;
+    width: 90px;
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+    border-radius: 50px;
+}
+
+/*footer*/
+footer{
+    background: #12A537;
+    color: #fff;
+    padding: 60px 0;
+}
+.container{
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+li{
+    list-style: none;
+    line-height: 2;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.items{
+    flex-basis: 20%;
+}
+.items .logo{
+    text-transform: capitalize;
+    font-size: 1.4em;
+    color: white;
+}
+.items p{
+    margin: 1.2em 0;
+}
+.social{
+    display: flex;
+}
+.social a{
+    height: 30px;
+    width: 30px;
+    margin:10px 5px;
+    text-align: center;
+
+}
+.items h3{
+    position: relative;
+    font-size: 1.3em;
+    margin-bottom: 1rem;
+    color: aliceblue;
+}
+.items h3::after{
+    content:"";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background: #fff;
+    bottom: -4px;
+    left: 0;
+}
+hr{
+    opacity: .3;
+}
+footer .end{
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+
+/* media para equipos desktop  */
+@media all and (max-width : 768px) {
+
+nav {
+	margin: 0;
+    position:relative;
+    
+}
+.flex-container{
+    background-image: none;
+    background-color: #12A537;
+}
+
+#logo {
+    color: #fff;
+}
+.menu{
+    position:absolute;
+    width:100%;
+    background-color: rgb(179, 174, 174);
+    top:60px;
+}
+
+#drop::after {
+	content:"";
+	display:block;
+	clear:both;
+}
+
+.toggle + a,
+.menu {
+    display: none;
+}
+
+.toggle {
+    display: block;
+	background-color: #e9e3e5;
+	padding:14px 20px;	
+	color:#12A537;
+	font-size:17px;
+	text-decoration:none;
+	border:none;
+    float: right;
+}
+
+.toggle:hover{
+    background-color: #ede8f0;
+}
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+nav ul li {
+    display: block;
+	width: 100%;
+}
+
+nav a:hover{
+    background-color: #12A537;
+}
+}
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+.containerP{
+    grid-template-columns: 40% 40%;
+
+}
+}
+
+/* Media para tablets*/
+@media (min-width: 600px) and (max-width: 992px) {
+
+.containerP{
+    grid-template-columns: 90%;
+}
+.containerN{
+    grid-template-columns: 90%;
+}
+.containerStaff {
+    grid-template-columns: 20% 20%;
+}
+    
+.containerPortada {
+    display: grid;
+    grid-template-columns: 40% 40%;
+}
+.tipoPortada {
+        color: white;
+        padding: 5px;    
+        text-transform: capitalize;
+        font-size: 25px;
+        background-color: rgb(201, 190, 190);
+    }
+    .nro{
+        color: #12A537;
+        font-size: 30px;
+}
+}
+
+
+/* Media para celulares nivel de resolucion mas pequeño */
+@media (min-width: 320px) and (max-width: 600px) {
+
+header ul li a {
+    font-size:medium;
+    border-color: #12A537;
+    padding: 5px 5px;
+    
+    }
+main h2 {
+
+    font-size: 30px;
+    color: #fff;
+}
+.subtitulosServicios{
+
+    flex-wrap: wrap;
+    font-size: 30px;
+}
+.subtitulosProyectos{
+
+    flex-wrap: wrap;
+    font-size: 30px;
+}
+
+.subtitulosNosotros{
+
+    flex-wrap: wrap;
+    font-size: 30px;
+}
+
+.equipoIngenio {
+
+    flex-wrap: wrap;
+    font-size: 30px;
+
+}
+.containerP{
+grid-template-columns:80%;
+
+}
+.proy img {
+    width: 200px;
+}
+
+
+.containerN{
+    flex-wrap: wrap;
+    grid-template-columns: 80%;
+}
+
+.nosotros1 h3{
+    color: #12A537;
+    padding: 20px;
+    font-size: 30px;
+}
+.nosotros1 span{
+color: grey;
+font-size: 20px;
+}
+
+.nosotros4 h3 {
+    color: grey;
+    font-size: 20px;
+    padding: 20px;
+}
+.containerStaff {
+    flex-wrap: wrap;
+    grid-template-columns: 30%;
+    display: inline;
+    
+}
+.containerPortada {    
+    display: grid;
+    grid-template-columns: 40%;
+}
+
+.tipoPortada {
+    color: white;
+    padding: 5px;    
+    text-transform: capitalize;
+    font-size: 15px;
+    background-color: rgb(201, 190, 190);
+}
+.nro{
+    color: #12A537;
+    font-size: 20px;
+}
+.whatsapp {
+    display: none;
+}
+.containerUbicacion{
+    display: none;
+}
+}
