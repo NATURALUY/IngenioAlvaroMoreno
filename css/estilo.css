@@ -30,7 +30,7 @@ header {
 .flex-container {
 	display: flex;
     justify-content: space-between;
-    background-image: linear-gradient(to right, white, green);
+    background-image: linear-gradient(to right, white, #398AB9);
 }
 
 nav { 
@@ -395,7 +395,7 @@ fieldset {
 
 /*footer*/
 footer{
-    background: #12A537;
+    background: #398AB9;
     color: #fff;
     padding: 60px 0;
 }
