@@ -474,7 +474,7 @@ nav {
 }
 .flex-container{
     background-image: none;
-    background-color: #12A537;
+    background-color: #398AB9;
 }
 
 #logo {
@@ -483,7 +483,7 @@ nav {
 .menu{
     position:absolute;
     width:100%;
-    background-color: rgb(179, 174, 174);
+    background-color: rgb(243, 233, 233);
     top:60px;
 }
 
@@ -500,9 +500,9 @@ nav {
 
 .toggle {
     display: block;
-	background-color: #e9e3e5;
+	background-color: #398AB9;
 	padding:14px 20px;	
-	color:#12A537;
+	color:#FFF;
 	font-size:17px;
 	text-decoration:none;
 	border:none;
@@ -510,7 +510,7 @@ nav {
 }
 
 .toggle:hover{
-    background-color: #ede8f0;
+    background-color: #bfbac2;
 }
 	[id^=drop]:checked + ul {
 		display: block;
@@ -522,7 +522,7 @@ nav ul li {
 }
 
 nav a:hover{
-    background-color: #12A537;
+    background-color: #cdd3cf;
 }
 }
 
